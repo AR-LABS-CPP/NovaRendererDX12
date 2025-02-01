@@ -1,4 +1,5 @@
 #include "stdafx.h"
+
 #include "DXDevice.h"
 #include "DXError.h"
 #include "DXHelper.h"

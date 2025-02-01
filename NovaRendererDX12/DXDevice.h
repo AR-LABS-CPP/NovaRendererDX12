@@ -1,7 +1,5 @@
 #pragma once
 
-#include <d3d12.h>
-#include <d3dx12.h>
 #include <dxgi1_6.h>
 #include <dxgidebug.h>
 
@@ -17,20 +15,20 @@ namespace Nova {
 
 		void Destroy();
 
-		ID3D12Device* GetDevice() {
-			return m_Device.Get();
+		const Microsoft::WRL::ComPtr<ID3D12Device>& GetDevice() const {
+			return m_Device;
 		}
 
-		IDXGIAdapter* GetAdapter() {
-			return m_Adapter.Get();
+		const Microsoft::WRL::ComPtr<IDXGIAdapter>& GetAdapter() const {
+			return m_Adapter;
 		}
 		
-		ID3D12CommandQueue* GetGraphicsQueue() {
-			return m_DirectQueue.Get();
+		const Microsoft::WRL::ComPtr<ID3D12CommandQueue>& GetGraphicsQueue() const {
+			return m_DirectQueue;
 		}
 
-		ID3D12CommandQueue* GetComputeQueue() {
-			return m_ComputeQueue.Get();
+		const Microsoft::WRL::ComPtr<ID3D12CommandQueue>& GetComputeQueue() const {
+			return m_ComputeQueue;
 		}
 
 		bool IsFp16Supported() { 

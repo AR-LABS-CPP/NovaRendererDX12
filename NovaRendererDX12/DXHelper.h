@@ -1,7 +1,5 @@
 #pragma once
 
-#include <d3d12.h>
-
 class MessageBuffer {
 public:
 	MessageBuffer(size_t len)
@@ -13,7 +11,7 @@ public:
 private:
 	static const size_t STATIC_LEN = 256;
 	std::vector<char> m_dynamic;
-	char m_static[STATIC_LEN];
+	char m_static[STATIC_LEN] = { '0' };
 	char* m_ptr;
 };
 

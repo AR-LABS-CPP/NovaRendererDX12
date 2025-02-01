@@ -10,6 +10,7 @@ Here’s a quick checklist of what I’ve implemented so far:
 
 - [x] **Created helper and error classes**
 - [x] **Created device creation class**
+- [x] **Created fence and swapchain classes**
 
 ## Resources for Learning DX12
 
