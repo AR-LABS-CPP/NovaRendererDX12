@@ -1,6 +1,6 @@
 #pragma once
 
-#include <dxgi1_6.h>
+#include "DXFence.h"
 
 namespace Nova {
 	class DXSwapChain {

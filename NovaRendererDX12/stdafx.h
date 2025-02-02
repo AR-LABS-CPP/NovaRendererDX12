@@ -27,3 +27,6 @@ using namespace DirectX;
 #include <mutex>
 #include <limits>
 #include <algorithm>
+
+#include "Time.h"
+#include "Misc.h"

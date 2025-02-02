@@ -140,14 +140,24 @@
     <ClInclude Include="DXFence.h" />
     <ClInclude Include="DXHelper.h" />
     <ClInclude Include="DXSwapChain.h" />
+    <ClInclude Include="DXWindow.h" />
+    <ClInclude Include="Enums.h" />
+    <ClInclude Include="Misc.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Time.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DXDevice.cpp" />
     <ClCompile Include="DXError.cpp" />
     <ClCompile Include="DXFence.cpp" />
-    <ClCompile Include="DXHelper.cpp" />
+    <ClCompile Include="DXHelper.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="DXSwapChain.cpp" />
+    <ClCompile Include="DXWindow.cpp" />
     <ClCompile Include="main.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>

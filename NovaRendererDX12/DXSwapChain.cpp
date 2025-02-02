@@ -1,7 +1,6 @@
 #include "stdafx.h"
-#include "DXDevice.h"
-#include "DXFence.h"
 #include "DXError.h"
+#include "DXDevice.h"
 #include "DXHelper.h"
 #include "DXSwapChain.h"
 
@@ -19,7 +18,7 @@ namespace Nova {
 		m_SwapChainDesc.BufferCount = m_BackBufferCount;
 		m_SwapChainDesc.Width = 0;
 		m_SwapChainDesc.Height = 0;
-		m_SwapChainDesc.Format = DXGI_FORMAT_R8G8B8A8_UNORM;
+		m_SwapChainDesc.Format = GetFormat();
 		m_SwapChainDesc.BufferUsage = DXGI_USAGE_RENDER_TARGET_OUTPUT;
 		m_SwapChainDesc.SwapEffect = DXGI_SWAP_EFFECT_FLIP_DISCARD;
 		m_SwapChainDesc.SampleDesc.Count = 1;
@@ -83,7 +82,7 @@ namespace Nova {
 			m_SwapChainDesc.BufferCount,
 			width,
 			height,
-			DXGI_FORMAT_R8G8B8A8_UNORM,
+			GetFormat(),
 			m_SwapChainDesc.Flags
 		));
 
@@ -157,7 +156,7 @@ namespace Nova {
 			SetName(backBuffer, "SwapChain");
 			
 			D3D12_RENDER_TARGET_VIEW_DESC colorDesc = {};
-			colorDesc.Format = DXGI_FORMAT_R8G8B8A8_UNORM;
+			colorDesc.Format = GetFormat();
 			colorDesc.ViewDimension = D3D12_RTV_DIMENSION_TEXTURE2D;
 			colorDesc.Texture2D.MipSlice = 0;
 			colorDesc.Texture2D.PlaneSlice = 0;

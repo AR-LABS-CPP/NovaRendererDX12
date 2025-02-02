@@ -33,6 +33,18 @@
     <ClInclude Include="DXSwapChain.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DXWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Misc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DXDevice.cpp">
@@ -54,6 +66,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DXSwapChain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DXWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

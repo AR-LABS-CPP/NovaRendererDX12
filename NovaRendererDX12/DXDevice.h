@@ -10,7 +10,8 @@ namespace Nova {
 			const char* appName,
 			const char* engine,
 			bool validationEnabled,
-			bool gpuValidationEnabled
+			bool gpuValidationEnabled,
+			HWND hWnd
 		);
 
 		void Destroy();
@@ -22,7 +23,7 @@ namespace Nova {
 		const Microsoft::WRL::ComPtr<IDXGIAdapter>& GetAdapter() const {
 			return m_Adapter;
 		}
-		
+
 		const Microsoft::WRL::ComPtr<ID3D12CommandQueue>& GetGraphicsQueue() const {
 			return m_DirectQueue;
 		}
@@ -31,27 +32,27 @@ namespace Nova {
 			return m_ComputeQueue;
 		}
 
-		bool IsFp16Supported() { 
+		bool IsFp16Supported() {
 			return m_fp16Supported;
 		}
-		
-		bool IsRT10Supported() { 
+
+		bool IsRT10Supported() {
 			return m_rt10Supported;
 		}
-		
-		bool IsRT11Supported() { 
+
+		bool IsRT11Supported() {
 			return m_rt11Supported;
 		}
-		
-		bool IsVRSTier1Supported() { 
+
+		bool IsVRSTier1Supported() {
 			return m_vrs1Supported;
 		}
-		
-		bool IsVRSTier2Supported() { 
+
+		bool IsVRSTier2Supported() {
 			return m_vrs2Supported;
 		}
-		
-		bool IsBarycentricsSupported() { 
+
+		bool IsBarycentricsSupported() {
 			return m_barycentricsSupported;
 		}
 

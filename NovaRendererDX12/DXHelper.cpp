@@ -30,7 +30,7 @@ namespace Nova {
 	}
 
 	void SetName(ID3D12Object* obj, const char* name) {
-		if (name == NULL) {
+		if (name != NULL) {
 			SetName(obj, std::string(name));
 		}
 	}
@@ -40,7 +40,7 @@ namespace Nova {
 		wchar_t nameBuffer[128];
 
 		if (name.size() >= 128) {
-			swprintf(nameBuffer, 128, L"%s", name.substr(name.size() - 127, name.size()).c_str());
+			swprintf(nameBuffer, 128, L"%hs", name.substr(name.size() - 127, 127).c_str());
 		}
 		else {
 			swprintf(nameBuffer, name.size() + 1, L"%S", name.c_str());

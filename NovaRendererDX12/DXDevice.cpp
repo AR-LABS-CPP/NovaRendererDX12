@@ -1,15 +1,15 @@
 #include "stdafx.h"
-
-#include "DXDevice.h"
 #include "DXError.h"
 #include "DXHelper.h"
+#include "DXDevice.h"
 
 namespace Nova {
 	void DXDevice::Create(
 		const char* appName,
 		const char* engine,
 		bool validationEnabled,
-		bool gpuValidationEnabled
+		bool gpuValidationEnabled,
+		HWND hWnd
 	) {
 		// Enable debug layer
 		if (validationEnabled || gpuValidationEnabled) {
