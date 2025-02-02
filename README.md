@@ -22,4 +22,7 @@ I know how tough it can be to get started with DX12, especially with the limited
 
 My advice is to go through Jeremiah’s tutorials first. They’ll give you a solid foundation before you dive into the samples. The samples also include the "MiniEngine," which demonstrates a lot of DX12 features, but I’d recommend coming back to it once you’ve worked through the tutorials and feel comfortable with the basics.
 
+Please do note that I am taking most of the code from [Cauldron](https://github.com/GPUOpen-LibrariesAndSDKs/Cauldron) because it's neat and easy to understand. However, I am
+not just copying and pasting from there, rather understanding the code first and modifying it to fit my needs.
+
 ## That’s about it for now
