@@ -12,6 +12,8 @@ Here’s a quick checklist of what I’ve implemented so far:
 - [x] **Created device creation class**
 - [x] **Created fence and swapchain classes**
 - [x] **Created window class**
+- [x] **Created command list and command queue classes**
+- [x] **Created descriptor heap class**
 
 ## Resources for Learning DX12
 

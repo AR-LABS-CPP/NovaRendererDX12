@@ -13,3 +13,7 @@ namespace Nova {
 
 	void SetName(ID3D12Object* obj, const std::string& name);
 }
+
+template<typename T> inline T AlignUp(T val, T alignment) {
+	return (val + alignment - (T)1) & ~(alignment - (T)1);
+}
