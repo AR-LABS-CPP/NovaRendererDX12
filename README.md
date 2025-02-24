@@ -1,3 +1,6 @@
+# NOTE
+I've decided to continue my low-level graphics programming journey with Vulkan instead. This decision comes from the fact that there just aren’t many resources for DX12, and even the ones that do exist tend to miss some important concepts. Vulkan, on the other hand, has an abundance of learning materials—both official resources from Khronos and plenty of YouTube series, articles, and code examples. Right now, learning and following along with Vulkan just feels way easier than going with DX12.
+
 # Nova Renderer (DirectX 12)
 
 Welcome to the Nova Renderer (DX12) repository. This is a personal project I’m working on while learning DirectX 12. After spending time with OpenGL, I decided to dive into the low-level world of DX12 and see if I can wrap my head around it, maybe even create something useful along the way.
